@@ -214,10 +214,10 @@ progress_status:
   status_help: ''
   status_types: []
 progressive_web_app:
-  enabled: false
-  name: ''
-  short_name: ''
-  precaching: false
+  enabled: true
+  name: Indicators for the Sustainable Development Goals - Cameroon
+  short_name: SDGs Cameroon
+  precaching: true
 proxy_indicators:
   label: ''
   description: ''
