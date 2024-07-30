@@ -1,4 +1,4 @@
-﻿analytics:
+analytics:
   ua: ''
   gtag: ''
   gtm: ''
@@ -22,8 +22,8 @@ breadcrumbs:
 cookie_consent_form:
   enabled: false
 country:
-  name: Australia
-  adjective: Australian
+  name: Cameroon
+  adjective: Cameroonian
 create_goals:
   previous_next_links: false
   goal_content_heading: ''
@@ -66,9 +66,9 @@ footer_language_toggle: none
 footer_menu:
   - path: /contact-us
     translation_key: menu.contact_us
-  - path: 'https://twitter.com/MyTwitterAccount'
+  - path: https://twitter.com/MyTwitterAccount
     translation_key: general.twitter
-  - path: 'https://facebook.com/MyFacebookAccount'
+  - path: https://facebook.com/MyFacebookAccount
     translation_key: general.facebook
   - path: /about/cookies-and-privacy/
     translation_key: menu.cookies
@@ -85,7 +85,7 @@ frontpage_cards:
       cursus est sed dapibus.
     include: ''
     button_label: Read more
-    button_link: 'https://example.com'
+    button_link: https://example.com
     rule_color: ''
   - title: Nam vestibulum
     content: |
@@ -93,7 +93,7 @@ frontpage_cards:
       interdum risus enim vitae tortor. Donec feugiat accumsan rutrum.
     include: ''
     button_label: Read more
-    button_link: 'https://example.com'
+    button_link: https://example.com
     rule_color: ''
 frontpage_goals_grid:
   title: frontpage.heading_short
@@ -101,7 +101,7 @@ frontpage_goals_grid:
 frontpage_introduction_banner:
   title: frontpage.intro_title
   description: frontpage.intro_body
-goal_image_base: 'https://open-sdg.org/sdg-translations/assets/img/goals'
+goal_image_base: https://open-sdg.org/sdg-translations/assets/img/goals
 goal_image_extension: ''
 goals_page:
   title: general.goals
@@ -175,7 +175,7 @@ map_options:
     opacity: 1
     fillOpacity: 0
     color: '#172d44'
-    dashArray: '5,5'
+    dashArray: 5,5
 menu:
   - path: /
     translation_key: general.home
@@ -221,7 +221,7 @@ progressive_web_app:
 proxy_indicators:
   label: ''
   description: ''
-remote_data_prefix: 'https://sdg-cameroon.github.io/data/'
+remote_data_prefix: https://sdg-cameroon.github.io/data/
 reporting_status:
   title: status.reporting_status
   description: status.description
@@ -236,8 +236,8 @@ reporting_status:
     - value: notapplicable
       label: status.not_applicable
       hide_on_goal_pages: false
-repository_url_data: 'https://github.com/SDG-Cameroon/data'
-repository_url_site: 'https://github.com/SDG-Cameroon/site'
+repository_url_data: https://github.com/SDG-Cameroon/data
+repository_url_site: https://github.com/SDG-Cameroon/site
 search_index_boost: []
 search_index_extra_fields: []
 site_config_form:
