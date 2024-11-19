@@ -56,9 +56,9 @@ disclaimer:
   message: ''
   hidden: false
 email_contacts:
-  questions: test@example.com
-  suggestions: test@example.com
-  functional: test@example.com
+  questions: carlos.lacgni@ins-cameroun.cm
+  suggestions: carlos.lacgni@ins-cameroun.cm
+  functional: carlos.lacgni@ins-cameroun.cm
 empty_metadata_placeholder: ''
 empty_metadata_placeholder_sources: ''
 environment: staging
@@ -78,22 +78,6 @@ frontpage_cards:
     include: components/download-all-data.html
     button_label: ''
     button_link: ''
-    rule_color: ''
-  - title: Lorem ipsum
-    content: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis
-      cursus est sed dapibus.
-    include: ''
-    button_label: Read more
-    button_link: https://example.com
-    rule_color: ''
-  - title: Nam vestibulum
-    content: |
-      Nam vestibulum, purus quis porttitor imperdiet, nisl sem mollis nisl, a
-      interdum risus enim vitae tortor. Donec feugiat accumsan rutrum.
-    include: ''
-    button_label: Read more
-    button_link: https://example.com
     rule_color: ''
 frontpage_goals_grid:
   title: frontpage.heading_short
@@ -143,7 +127,7 @@ indicator_tabs:
   tab_4: ''
 languages:
   - en
-  - es
+  - fr
 languages_public: []
 logos: []
 map_layers: []
@@ -175,7 +159,6 @@ map_options:
     opacity: 1
     fillOpacity: 0
     color: '#172d44'
-    dashArray: 5,5
 menu:
   - path: /
     translation_key: general.home
