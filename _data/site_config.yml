@@ -130,7 +130,12 @@ languages:
   - fr
 languages_public: []
 logos: []
-map_layers: []
+map_layers:
+  - subfolder: regions
+    label: indicator.map
+    min_zoom: 0
+    max_zoom: 20
+    staticBorders: false
 map_options:
   disaggregation_controls: false
   minZoom: 5
