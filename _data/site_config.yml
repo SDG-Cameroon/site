@@ -131,11 +131,21 @@ languages:
 languages_public: []
 logos: []
 map_layers:
-  - subfolder: regions
-    label: indicator.map
-    min_zoom: 0
-    max_zoom: 20
-    staticBorders: false
+  - subfolder: national_level1
+    label: Country
+    min_zoom: 4
+    max_zoom: 6
+    staticBorders: true
+  - subfolder: regions_1
+    label: Regions1
+    min_zoom: 6
+    max_zoom: 8
+    staticBorders: true
+  - subfolder: regions_3
+    label: Regions3
+    min_zoom: 9
+    max_zoom: 12
+    staticBorders: true
 map_options:
   disaggregation_controls: false
   minZoom: 5
