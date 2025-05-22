@@ -79,6 +79,9 @@ frontpage_cards:
     button_label: ''
     button_link: ''
     rule_color: ''
+  - title: my front page
+    content: my content
+    button_link: www.example.com
 frontpage_goals_grid:
   title: frontpage.heading_short
   description: frontpage.instructions_shorter
@@ -94,7 +97,6 @@ graph_color_headline: '#004466'
 graph_color_headline_high_contrast: '#55a6e5'
 graph_color_set: accessible
 graph_color_list: []
-graph_color_number: 0
 graph_title_from_series: false
 header_language_toggle: dropdown
 hide_empty_metadata: true
@@ -150,25 +152,17 @@ map_options:
   disaggregation_controls: false
   minZoom: 4
   maxZoom: 10
-  tileURL: 'https://{s}.tile.jawg.io/{id}/{z}/{x}/{y}{r}.png?access-token={accessToken}'
+  tileURL: https://{s}.tile.jawg.io/{id}/{z}/{x}/{y}{r}.png?access-token={accessToken}
   tileOptions:
     id: ed56748f-29f9-465e-9269-c715674ee5ff
     accessToken: yrcGMvxCkRD6zZBF4x3mnAT3OGQJstAj7JvG1iy1UjEdy6JFeDfnzKvXrTK07CxF
     attribution: >-
       <a href="http://jawg.io" title="Provider of map tiles"
       target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a
-      href="https://www.openstreetmap.org/copyright" title="Provider of map visual data copywrite information">OpenStreetMap</a>
-      contributors | <a href="http://geoportal.statistics.gov.uk/" title="The Open Geography portal from the Office for National Statistics">ONS</a>
-  colorRange: 
-    -  '#c4e1c6'
-    -  '#b0d1b3'
-    -  '#9bc2a1'
-    -  '#87b28f'
-    -  '#74a37c'
-    -  '#60946b'
-    -  '#4d8559'
-    -  '#3a7747'
-    -  '#276836'
+      href="https://www.openstreetmap.org/copyright" title="Provider of map
+      visual data copywrite information">OpenStreetMap</a> contributors | <a
+      href="http://geoportal.statistics.gov.uk/" title="The Open Geography
+      portal from the Office for National Statistics">ONS</a>
   noValueColor: '#f0f0f0'
   styleNormal:
     weight: 1
@@ -187,7 +181,8 @@ map_options:
     opacity: 1
     fillOpacity: 0
     color: '#172d44'
-    dashArray: '5,5'
+    dashArray: 5,5
+  colorRange: ''
 menu:
   - path: /
     translation_key: general.home
@@ -266,3 +261,4 @@ use_new_config_forms: true
 validate_indicator_config: false
 validate_site_config: false
 x_axis_label: ''
+graph_color_number: -1
