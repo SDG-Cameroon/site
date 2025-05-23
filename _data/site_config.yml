@@ -141,6 +141,11 @@ map_layers:
     min_zoom: 6
     max_zoom: 8
     staticBorders: true
+  - subfolder: regions_2
+    label: Regions2
+    min_zoom: 6
+    max_zoom: 8
+    staticBorders: true
   - subfolder: regions_3
     label: Regions3
     min_zoom: 9
