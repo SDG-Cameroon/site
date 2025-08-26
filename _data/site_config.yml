@@ -138,22 +138,22 @@ map_layers:
   - subfolder: national_level1
     label: Country
     min_zoom: 4
-    max_zoom: 6
+    max_zoom: 10
     staticBorders: true
   - subfolder: regions_1
     label: Regions1
-    min_zoom: 6
-    max_zoom: 8
+    min_zoom: 4
+    max_zoom: 10
     staticBorders: true
   - subfolder: regions_2
     label: Regions2
-    min_zoom: 6
-    max_zoom: 8
+    min_zoom: 4
+    max_zoom: 10
     staticBorders: true
   - subfolder: regions_3
     label: Regions3
-    min_zoom: 9
-    max_zoom: 12
+    min_zoom: 4
+    max_zoom: 10
     staticBorders: true
 map_options:
   disaggregation_controls: false
