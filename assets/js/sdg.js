@@ -133,7 +133,7 @@ opensdg.autotrack = function(preset, category, action, label) {
     this.proxy = options.proxy;
     this.proxySerieses = options.proxySerieses;
     this.startValues = options.startValues;
-    this.configObsAttributes = null;
+    this.configObsAttributes = [];
     this.allObservationAttributes = options.allObservationAttributes;
 
     // Require at least one geoLayer.
@@ -1372,7 +1372,7 @@ function nonFieldColumns() {
       columns.push(tsAttribute.field);
     });
   }
-  var observationAttributes = null;
+  var observationAttributes = [];
   if (observationAttributes && observationAttributes.length > 0) {
     observationAttributes.forEach(function(oAttribute) {
       columns.push(oAttribute.field);
@@ -2574,7 +2574,7 @@ function prepareDataForDataset(years, rows, allObservationAttributes) {
     data: [],
     observationAttributes: [],
   };
-  var configObsAttributes = null;
+  var configObsAttributes = [];
   if (configObsAttributes && configObsAttributes.length > 0) {
     configObsAttributes = configObsAttributes.map(function(obsAtt) {
       return obsAtt.field;
@@ -2803,7 +2803,7 @@ function inputEdges(edges) {
       return true;
     });
   }
-  var configuredObservationAttributes = null;
+  var configuredObservationAttributes = [];
   if (configuredObservationAttributes && configuredObservationAttributes.length > 0) {
     configuredObservationAttributesFlat = configuredObservationAttributes.map(function(att) { return att.field; });
     edgesData = edgesData.filter(function(edge) {
@@ -2847,7 +2847,7 @@ function getAllObservationAttributes(rows) {
   }
   var obsAttributeHash = {},
       footnoteNumber = 0,
-      configObsAttributes = null;
+      configObsAttributes = [];
   if (configObsAttributes && configObsAttributes.length > 0) {
     configObsAttributes = configObsAttributes.map(function(obsAtt) {
       return obsAtt.field;
@@ -3318,7 +3318,7 @@ var mapView = function () {
     $('.map').show();
     $('#map').sdgMap({
       indicatorId: indicatorId,
-      mapOptions: {"disaggregation_controls":false,"minZoom":4,"maxZoom":10,"tileURL":"https://{s}.tile.jawg.io/{id}/{z}/{x}/{y}{r}.png?access-token={accessToken}","tileOptions":{"id":"ed56748f-29f9-465e-9269-c715674ee5ff","accessToken":"yrcGMvxCkRD6zZBF4x3mnAT3OGQJstAj7JvG1iy1UjEdy6JFeDfnzKvXrTK07CxF","attribution":"<a href=\"http://jawg.io\" title=\"Provider of map tiles\" target=\"_blank\">&copy; <b>Jawg</b>Maps</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\" title=\"Provider of map visual data copywrite information\">OpenStreetMap</a> contributors | <a href=\"http://geoportal.statistics.gov.uk/\" title=\"The Open Geography portal from the Office for National Statistics\">ONS</a>"},"colorRange":"opensdg.mapColors.default","noValueColor":"#f0f0f0","styleNormal":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#888888","dashArray":""},"styleHighlighted":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#111111","dashArray":""},"styleStatic":{"weight":2,"opacity":1,"fillOpacity":0,"color":"#172d44","dashArray":"5,5"}},
+      mapOptions: {"disaggregation_controls":false,"minZoom":4,"maxZoom":10,"tileURL":"https://{s}.tile.jawg.io/{id}/{z}/{x}/{y}{r}.png?access-token={accessToken}","tileOptions":{"id":"ed56748f-29f9-465e-9269-c715674ee5ff","accessToken":"yrcGMvxCkRD6zZBF4x3mnAT3OGQJstAj7JvG1iy1UjEdy6JFeDfnzKvXrTK07CxF","attribution":"<a href=\"http://jawg.io\" title=\"Provider of map tiles\" target=\"_blank\">&copy; <b>Jawg</b>Maps</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\" title=\"Provider of map visual data copywrite information\">OpenStreetMap</a> contributors | <a href=\"http://geoportal.statistics.gov.uk/\" title=\"The Open Geography portal from the Office for National Statistics\">ONS</a>"},"colorRange":"opensdg.mapColors.default","noValueColor":"#f0f0f0","styleNormal":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#888888","dashArray":""},"styleHighlighted":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#111111","dashArray":""},"styleStatic":{"weight":2,"opacity":1,"fillOpacity":0,"color":"#172d44","dashArray":55}},
       mapLayers: [{"subfolder":"national_level1","label":"Country","min_zoom":4,"max_zoom":10,"staticBorders":true},{"subfolder":"regions_1","label":"Regions1","min_zoom":4,"max_zoom":10,"staticBorders":true},{"subfolder":"regions_2","label":"Regions2","min_zoom":4,"max_zoom":10,"staticBorders":true},{"subfolder":"regions_3","label":"Regions3","min_zoom":4,"max_zoom":10,"staticBorders":true}],
       precision: precision,
       precisionItems: precisionItems,
@@ -3465,7 +3465,7 @@ function updateObservationAttributes(obsAttributes) {
  * Gets the text of an observation attribute for display to the end user.
  */
 function getObservationAttributeText(obsAttribute) {
-    var configuredObsAttributes = null;
+    var configuredObsAttributes = [];
     var attributeConfig = _.find(configuredObsAttributes, function(configuredObsAttribute) {
         return configuredObsAttribute.field === obsAttribute.field;
     });
