@@ -1,4 +1,4 @@
-﻿analytics:
+analytics:
   ua: ''
   gtag: ''
   gtm: ''
@@ -22,8 +22,8 @@ breadcrumbs:
 cookie_consent_form:
   enabled: false
 country:
-  name: Australia
-  adjective: Australian
+  name: Cameroon
+  adjective: Cameroonian
 create_goals:
   previous_next_links: false
   goal_content_heading: ''
@@ -48,17 +48,17 @@ custom_js:
   - /assets/js/custom.js
 data_edit_url: data
 data_fields:
-  units: ''
-  series: ''
+  units: UNIT_MEASURE
+  series: SERIES
 date_formats: []
 disclaimer:
   phase: ''
   message: ''
   hidden: false
 email_contacts:
-  questions: test@example.com
-  suggestions: test@example.com
-  functional: test@example.com
+  questions: carlos.lacgni@ins-cameroun.cm
+  suggestions: carlos.lacgni@ins-cameroun.cm
+  functional: carlos.lacgni@ins-cameroun.cm
 empty_metadata_placeholder: ''
 empty_metadata_placeholder_sources: ''
 environment: staging
@@ -66,9 +66,9 @@ footer_language_toggle: none
 footer_menu:
   - path: /contact-us
     translation_key: menu.contact_us
-  - path: 'https://twitter.com/MyTwitterAccount'
+  - path: https://twitter.com/MyTwitterAccount
     translation_key: general.twitter
-  - path: 'https://facebook.com/MyFacebookAccount'
+  - path: https://facebook.com/MyFacebookAccount
     translation_key: general.facebook
   - path: /about/cookies-and-privacy/
     translation_key: menu.cookies
@@ -79,44 +79,36 @@ frontpage_cards:
     button_label: ''
     button_link: ''
     rule_color: ''
-  - title: Lorem ipsum
-    content: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis
-      cursus est sed dapibus.
-    include: ''
-    button_label: Read more
-    button_link: 'https://example.com'
-    rule_color: ''
-  - title: Nam vestibulum
-    content: |
-      Nam vestibulum, purus quis porttitor imperdiet, nisl sem mollis nisl, a
-      interdum risus enim vitae tortor. Donec feugiat accumsan rutrum.
-    include: ''
-    button_label: Read more
-    button_link: 'https://example.com'
-    rule_color: ''
+  - button_link: https://www.ins-cameroun.cm
+    title: Site
+    content: https://www.ins-cameroun.cm
 frontpage_goals_grid:
   title: frontpage.heading_short
   description: frontpage.instructions_shorter
 frontpage_introduction_banner:
   title: frontpage.intro_title
   description: frontpage.intro_body
-goal_image_base: 'https://open-sdg.org/sdg-translations/assets/img/goals'
+goal_image_base: https://open-sdg.org/sdg-translations/assets/img/goals
 goal_image_extension: ''
 goals_page:
   title: general.goals
   description: frontpage.instructions_shorter
 graph_color_headline: '#004466'
 graph_color_headline_high_contrast: '#55a6e5'
-graph_color_set: accessible
 graph_color_list: []
 graph_color_number: 0
-graph_title_from_series: false
+graph_color_set: accessible
+graph_title_from_series: true
 header_language_toggle: dropdown
 hide_empty_metadata: true
 hide_single_series: true
 hide_single_unit: true
-ignored_disaggregations: []
+ignored_disaggregations:
+  - SOURCE_DETAIL
+  - COMMENT_OBS
+  - TIME_DETAIL
+  - NATURE
+  - Progress
 indicator_config_form:
   enabled: true
   dropdowns: []
@@ -143,20 +135,46 @@ indicator_tabs:
   tab_4: ''
 languages:
   - en
-  - es
+  - fr
 languages_public: []
 logos: []
-map_layers: []
+map_layers:
+  - subfolder: national_level1
+    label: Country
+    min_zoom: 4
+    max_zoom: 10
+    staticBorders: true
+  - subfolder: regions_1
+    label: Regions1
+    min_zoom: 4
+    max_zoom: 10
+    staticBorders: true
+  - subfolder: regions_2
+    label: Regions2
+    min_zoom: 4
+    max_zoom: 10
+    staticBorders: true
+  - subfolder: regions_3
+    label: Regions3
+    min_zoom: 4
+    max_zoom: 10
+    staticBorders: true
 map_options:
   disaggregation_controls: false
-  minZoom: 5
+  minZoom: 4
   maxZoom: 10
-  tileURL: ''
+  tileURL: https://{s}.tile.jawg.io/{id}/{z}/{x}/{y}{r}.png?access-token={accessToken}
   tileOptions:
-    id: ''
-    accessToken: ''
-    attribution: ''
-  colorRange: chroma.brewer.BuGn
+    id: ed56748f-29f9-465e-9269-c715674ee5ff
+    accessToken: yrcGMvxCkRD6zZBF4x3mnAT3OGQJstAj7JvG1iy1UjEdy6JFeDfnzKvXrTK07CxF
+    attribution: >-
+      <a href="http://jawg.io" title="Provider of map tiles"
+      target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a
+      href="https://www.openstreetmap.org/copyright" title="Provider of map
+      visual data copywrite information">OpenStreetMap</a> contributors | <a
+      href="http://geoportal.statistics.gov.uk/" title="The Open Geography
+      portal from the Office for National Statistics">ONS</a>
+  colorRange: opensdg.mapColors.default
   noValueColor: '#f0f0f0'
   styleNormal:
     weight: 1
@@ -175,7 +193,7 @@ map_options:
     opacity: 1
     fillOpacity: 0
     color: '#172d44'
-    dashArray: '5,5'
+    dashArray: 5,5
 menu:
   - path: /
     translation_key: general.home
@@ -195,6 +213,7 @@ menu:
   - path: /about
     translation_key: menu.about
     dropdown: []
+meta_tags: []
 metadata_edit_url: metadata
 metadata_tabs:
   - scope: national
@@ -206,13 +225,36 @@ metadata_tabs:
   - scope: sources
     title: indicator.sources
     description: ''
-meta_tags: []
 news:
   category_links: false
+observation_attributes: []
 progress_status:
-  status_heading: ''
+  status_heading: status.progress_status
   status_help: ''
-  status_types: []
+  status_types:
+    - value: not_available
+      label: status.progress_not_available
+      alt: status.progress_not_available
+    - value: deterioration
+      label: status.deterioration
+      image: assets/img/progress/red-gauge.png
+      alt: status.deterioration
+    - value: limited_progress
+      label: status.limited_progress
+      image: assets/img/progress/orange-gauge.png
+      alt: status.limited_progress
+    - value: moderate_progress
+      label: status.moderate_progress
+      image: assets/img/progress/yellow-gauge.png
+      alt: status.moderate_progress
+    - value: substantial_progress
+      label: status.substantial_progress
+      image: assets/img/progress/green-gauge.png
+      alt: status.substantial_progress
+    - value: target_achieved
+      label: status.target_achieved
+      image: assets/img/progress/target-achieved-gauge.png
+      alt: status.target_achieved
 progressive_web_app:
   enabled: true
   name: Indicators for the Sustainable Development Goals - Cameroon
@@ -221,7 +263,7 @@ progressive_web_app:
 proxy_indicators:
   label: ''
   description: ''
-remote_data_prefix: 'https://sdg-cameroon.github.io/data/'
+remote_data_prefix: https://sdg-cameroon.github.io/data/
 reporting_status:
   title: status.reporting_status
   description: status.description
@@ -236,8 +278,8 @@ reporting_status:
     - value: notapplicable
       label: status.not_applicable
       hide_on_goal_pages: false
-repository_url_data: 'https://github.com/SDG-Cameroon/data'
-repository_url_site: 'https://github.com/SDG-Cameroon/site'
+repository_url_data: https://github.com/SDG-Cameroon/data
+repository_url_site: https://github.com/SDG-Cameroon/site
 search_index_boost: []
 search_index_extra_fields: []
 site_config_form:
@@ -250,7 +292,4 @@ time_series_attributes:
     label: indicator.footnote
   - field: DATA_LAST_UPDATE
     label: metadata_fields.national_data_update_url
-use_new_config_forms: true
-validate_indicator_config: false
-validate_site_config: false
 x_axis_label: ''
