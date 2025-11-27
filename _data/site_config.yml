@@ -79,8 +79,10 @@ frontpage_cards:
     button_label: ''
     button_link: ''
     rule_color: ''
-  - title: Site
-    content: [https://www.ins-cameroun.cm](https://www.ins-cameroun.cm)
+  - button_link: https://www.ins-cameroun.cm
+    title: INS site
+    button_label: Read more
+    content: ''
 frontpage_goals_grid:
   title: frontpage.heading_short
   description: frontpage.instructions_shorter
